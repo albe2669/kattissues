@@ -12,6 +12,9 @@ type config struct {
 		RepoOwner string `yaml:"repo-owner"`
 		RepoName  string `yaml:"repo-name"`
 	} `yaml:"github"`
+	Kattis struct {
+		Host string `yaml:"host"`
+	} `yaml:"kattis"`
 }
 
 var Config *config

@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"fmt"
+	contests "github.com/albe2669/kattissues/cmd/contests"
 	members "github.com/albe2669/kattissues/cmd/members"
 	"os"
 
@@ -24,5 +25,6 @@ func Execute() {
 }
 
 func init() {
+	rootCmd.AddCommand(contests.ContestsCmd)
 	rootCmd.AddCommand(members.MembersCmd)
 }
